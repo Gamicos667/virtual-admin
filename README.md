@@ -12,14 +12,14 @@ Current Features:
 	
 	
 	Global Commands:
-	help - Shows list of commands
 	lag - (Client Sided) Lag your whole game
 	refresh - Refresh your Avatar
-	cteleport - Click 'e' To Teleport
+	teleport - Click 'e' To Teleport
 	noclip - Click 'v' to enable Noclip
 	rejoin - Rejoins game
 	speed - Hold 'q' to Run
         
-       Rocitizens Commands:
-       rocitizens monalisa - Buys Monalisa
+       The Streets Commands:
+       ts itemesp - The Streets ItemESP
+       ts walkspeed - The Streets Speed
        
