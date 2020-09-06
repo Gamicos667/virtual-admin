@@ -1,7 +1,9 @@
+-- Gui to Lua
+-- Version: 3.2
 
 -- Instances:
 
-local ScreenGui = Instance.new("ScreenGui")
+local OkfprjH = Instance.new("ScreenGui")
 local Frame = Instance.new("ImageLabel")
 local TextLabel = Instance.new("TextLabel")
 local versionget = Instance.new("TextLabel")
@@ -20,10 +22,12 @@ local TextButton_Roundify_4px_2 = Instance.new("ImageLabel")
 
 --Properties:
 
-ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+OkfprjH.Name = "OkfprjH"
+OkfprjH.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+OkfprjH.ResetOnSpawn = false
 
 Frame.Name = "Frame"
-Frame.Parent = ScreenGui
+Frame.Parent = OkfprjH
 Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Frame.BackgroundTransparency = 1.000
 Frame.Position = UDim2.new(0.397395819, 0, 0.155092582, 0)
@@ -70,7 +74,7 @@ TextLabel_2.TextSize = 30.000
 TextLabel_2.TextWrapped = true
 
 VSVirtualScripts.Name = "VSVirtualScripts"
-VSVirtualScripts.Parent = ScreenGui
+VSVirtualScripts.Parent = OkfprjH
 VSVirtualScripts.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 VSVirtualScripts.BackgroundTransparency = 1.000
 VSVirtualScripts.Position = UDim2.new(0.0475679524, 0, 0.323127627, 0)
@@ -206,7 +210,7 @@ TextButton_Roundify_4px_2.SliceScale = 0.040
 
 -- Scripts:
 
-local function NAQWWDF_fake_script() -- Frame.LocalScript 
+local function OFOT_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	local textlabel = script.Parent.TextLabel
@@ -241,8 +245,8 @@ local function NAQWWDF_fake_script() -- Frame.LocalScript
 		frame:Destroy()
 	
 end
-coroutine.wrap(NAQWWDF_fake_script)()
-local function SECYRIV_fake_script() -- Frame.LocalScript 
+coroutine.wrap(OFOT_fake_script)()
+local function UFTJ_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -285,8 +289,8 @@ local function SECYRIV_fake_script() -- Frame.LocalScript
 		end
 	end)
 end
-coroutine.wrap(SECYRIV_fake_script)()
-local function MBUVAJG_fake_script() -- Frame.LocalScript 
+coroutine.wrap(UFTJ_fake_script)()
+local function OUDML_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	local frame2 = script.Parent
@@ -294,8 +298,8 @@ local function MBUVAJG_fake_script() -- Frame.LocalScript
 	
 	
 end
-coroutine.wrap(MBUVAJG_fake_script)()
-local function NQTCL_fake_script() -- VSVirtualScripts.LocalScript 
+coroutine.wrap(OUDML_fake_script)()
+local function BHZRJ_fake_script() -- VSVirtualScripts.LocalScript 
 	local script = Instance.new('LocalScript', VSVirtualScripts)
 
 	local frame = script.Parent
@@ -306,8 +310,8 @@ local function NQTCL_fake_script() -- VSVirtualScripts.LocalScript
 	frame.Visible = true
 	frame:TweenPosition(UDim2.new(0.0, 0, 0.5, 0))
 end
-coroutine.wrap(NQTCL_fake_script)()
-local function EOBDWQ_fake_script() -- VSVirtualScripts.LocalScript 
+coroutine.wrap(BHZRJ_fake_script)()
+local function UOACDLQ_fake_script() -- VSVirtualScripts.LocalScript 
 	local script = Instance.new('LocalScript', VSVirtualScripts)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -350,8 +354,8 @@ local function EOBDWQ_fake_script() -- VSVirtualScripts.LocalScript
 		end
 	end)
 end
-coroutine.wrap(EOBDWQ_fake_script)()
-local function XEGY_fake_script() -- VSVirtualScripts.LocalScript 
+coroutine.wrap(UOACDLQ_fake_script)()
+local function CKBMWMO_fake_script() -- VSVirtualScripts.LocalScript 
 	local script = Instance.new('LocalScript', VSVirtualScripts)
 
 	local DestroyButton = script.Parent.DestroyButton
@@ -361,8 +365,8 @@ local function XEGY_fake_script() -- VSVirtualScripts.LocalScript
 		scgui:Destroy()
 	end)
 end
-coroutine.wrap(XEGY_fake_script)()
-local function JQSD_fake_script() -- CommandsList.LocalScript 
+coroutine.wrap(CKBMWMO_fake_script)()
+local function ITCZ_fake_script() -- CommandsList.LocalScript 
 	local script = Instance.new('LocalScript', CommandsList)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -405,8 +409,8 @@ local function JQSD_fake_script() -- CommandsList.LocalScript
 		end
 	end)
 end
-coroutine.wrap(JQSD_fake_script)()
-local function RZCHOFK_fake_script() -- CommandsList.LocalScript 
+coroutine.wrap(ITCZ_fake_script)()
+local function OAFBK_fake_script() -- CommandsList.LocalScript 
 	local script = Instance.new('LocalScript', CommandsList)
 
 	local close = script.Parent.DestroyButton
@@ -416,8 +420,8 @@ local function RZCHOFK_fake_script() -- CommandsList.LocalScript
 		frame1.Visible = false
 	end)
 end
-coroutine.wrap(RZCHOFK_fake_script)()
-local function YFTH_fake_script() -- CommandsList.LocalScript 
+coroutine.wrap(OAFBK_fake_script)()
+local function KBVB_fake_script() -- CommandsList.LocalScript 
 	local script = Instance.new('LocalScript', CommandsList)
 
 	local textlabel = script.Parent.ScrollingFrame.List
@@ -430,12 +434,13 @@ local function YFTH_fake_script() -- CommandsList.LocalScript
 	cteleport - Click 'e' To Teleport
 	noclip - Click 'v' to enable Noclip
 	rejoin - Rejoins game
+	speed - Hold 'q' to Run
 	]]
 	
 	textlabel.Text = "" .. commands .. ""
 end
-coroutine.wrap(YFTH_fake_script)()
-local function GFLGDIQ_fake_script() -- CommandBar.LocalScript 
+coroutine.wrap(KBVB_fake_script)()
+local function KQOU_fake_script() -- CommandBar.LocalScript 
 	local script = Instance.new('LocalScript', CommandBar)
 
 	local cmdbar = script.Parent
@@ -529,10 +534,48 @@ local function GFLGDIQ_fake_script() -- CommandBar.LocalScript
 				game:GetService('TeleportService'):Teleport(game.PlaceId)
 			else if cmdbar.Text == "refresh" then
 					game:GetService("Players").LocalPlayer.Character.Humanoid.Health=0
-			
+				else if cmdbar.Text == "speed" then
+						down = false
+						velocity = Instance.new("BodyVelocity")
+						velocity.maxForce = Vector3.new(100000, 0, 100000)
+						---vv Use that to change the speed v
+						local speed = 139
+						gyro = Instance.new("BodyGyro")
+						gyro.maxTorque = Vector3.new(100000, 0, 100000)
+						
+						local hum = game.Players.LocalPlayer.Character.Humanoid
+						
+						function onButton1Down(mouse)
+							down = true
+							velocity.Parent = game.Players.LocalPlayer.Character.UpperTorso
+							velocity.velocity = (hum.MoveDirection) * speed
+							gyro.Parent = game.Players.LocalPlayer.Character.UpperTorso
+							while down do
+								if not down then break end
+								velocity.velocity = (hum.MoveDirection) * speed
+								local refpos = gyro.Parent.Position + (gyro.Parent.Position - workspace.CurrentCamera.CoordinateFrame.p).unit * 5
+								gyro.cframe = CFrame.new(gyro.Parent.Position, Vector3.new(refpos.x, gyro.Parent.Position.y, refpos.z))
+								wait(0.1)
+							end
+						end
+						
+						function onButton1Up(mouse)
+							velocity.Parent = nil
+							gyro.Parent = nil
+							down = false
+						end
+						--To Change the key in those 2 lines, replace the "q" with your desired key
+						function onSelected(mouse)
+							mouse.KeyDown:connect(function(k) if k:lower()=="q"then onButton1Down(mouse)end end)
+							mouse.KeyUp:connect(function(k) if k:lower()=="q"then onButton1Up(mouse)end end)
+						end
+						
+						onSelected(game.Players.LocalPlayer:GetMouse())
+					end
 				end
+				
 			end
 		end
 	end)
 end
-coroutine.wrap(GFLGDIQ_fake_script)()
+coroutine.wrap(KQOU_fake_script)()
